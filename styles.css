@@ -48,19 +48,23 @@ h2 {
 
 form {
     background: #FFFFFF;
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px 20px 20px 20px;
     width: 750px;
     margin: auto;
     margin-top: 58px;
 
 }
 
-.wrapper-personal {
+.wrapper-personal, .wrapper-mentor, .wrapper-hours {
     display: flex;
     flex-direction: column;
+    width: 622px;
+    margin: auto;
 }
 
-fildset {
+fieldset {
+    border: none;
+
     font-family: 'Staatliches';
     font-style: normal;
     font-weight: 400;
@@ -69,7 +73,14 @@ fildset {
     color: #535971;
 
     padding-top: 64px;
-    padding-left: 64px;
+}
+
+.names, .mentor, label, input { 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #4E4958;
 }
 
 .separator {
@@ -80,6 +91,134 @@ fildset {
 
 .names {
     display: flex;
-    ga
+    justify-content: space-between;
 }
 
+.names > div {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+input {
+    margin-top: 16px;
+    margin-bottom: 8px;
+
+    height: 56px;
+
+    background: #FAFAFC;
+
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+}
+
+.wrapper-personal label span {
+    margin-left: 4px;
+}
+
+span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px; 
+
+    color: #C1BCCC;
+}
+
+.mentor {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper-mentor div label span {
+    margin-left: 4px;
+}
+
+p {
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+
+    color: #535971;
+}
+
+.input-labels {
+    display: flex;
+    margin-top: 8px;
+}
+
+.input-labels div {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-labels div label span {
+    margin-left: 4px;
+}
+
+.input-labels input{
+    background: #FAFAFC;
+
+    border: 1px solid #E6E6F0;
+    border-radius: 8px
+}
+
+.date {
+    width: 100%;
+}
+
+.das, .ate {
+    width: 140px
+}
+
+.das {
+    margin-left: 32px;
+}
+
+.ate {
+    margin-left: 10px;
+}
+
+.second-mentor {
+    margin-bottom: 64px;
+}
+
+.form-button {
+    background: #535971;
+    border-radius: 0px 0px 20px 20px;
+
+    height: 160px;
+    padding: 53px 71px;
+
+    margin-bottom: 300px;
+}
+
+.submit-button {
+    margin: auto;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 40px;
+
+    background: #FF5374;
+    border-radius: 20px;
+    border: none;
+
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+
+    color: #FFFFFF;
+}
+
+.submit-button:hover {
+    opacity: 0.8;
+    border: solid 1px #FFFFFF;
+}

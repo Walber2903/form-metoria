@@ -19,21 +19,77 @@
     </header>
     <form>
         <section class="wrapper-personal">
-            <fildset>INFORMAÇÕES PESSOAIS</fildset>
+            <fieldset>INFORMAÇÕES PESSOAIS</fieldset>
             <div class="separator"></div>
             <div class="names">
-                <label>Nome</label>
-                <input type="text" name="name" id="" />
-                <label>Sobrenome</label>
-                <input type="text" name="surname" id="" />
+                <div class="first-name">
+                    <label>Nome</label>
+                    <input type="text" name="name" />
+                </div>
+                <div class="second-name">
+                    <label>Sobrenome</label>
+                    <input type="text" name="surname" />
+                </div>
             </div>
             <label>Email <span>(digite um email válido)</span></label>
-            <input type="email" name="email" id="">
+            <input type="email" name="email" />
             <label>Senha <span>(mínimo de 6 caracteres)</span></label>
-            <input type="password" name="password" id="">
+            <input type="password" name="password" />
         </section>
 
+        <section class="wrapper-mentor">
+            <fieldset>INFORMAÇÕES DO MENTOR</fieldset>
+            <div class="separator"></div>
+            <div class="mentor">
+                <label>Nome do seu mentor <span>(só o primeiro nome)</span></label>
+                <input type="text" name="name" id="" />
+            </div>
+        </section>
 
+        <section class="wrapper-hours">
+            <fieldset>SEUS HORÁRIOS DISPONÍVEIS</fieldset>
+            <div class="separator"></div>
+            <div class="date-mentor">
+                <div class="first-mentor">
+                    <p>PRIMEIRA MENTORIA</p>
+                    <div class="input-labels">
+                        <div class="date">
+                            <label>Data <span>(DD/MM/AAAA)</span></label>
+                            <input type="date" name="data" />
+                        </div>
+                        <div class="das">
+                            <label>Das</label>
+                            <input type="time" name="das" />
+                        </div>
+                        <div class="ate">
+                            <label>Até</label>
+                            <input type="time" name="ate" />
+                        </div>
+                    </div>
+                </div>
+                <div class="second-mentor">
+                    <p>SEGUNDA MENTORIA</p>
+                    <div class="input-labels">
+                        <div class="date">
+                            <label>Data <span>(DD/MM/AAAA)</span></label>
+                            <input type="date" name="data" />
+                        </div>
+                        <div class="das">
+                            <label>Das</label>
+                            <input type="time" name="das" />
+                        </div>
+                        <div class="ate">
+                            <label>Até</label>
+                            <input type="time" name="ate" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="form-button">
+            <input class="submit-button" type="submit" value="SALVAR">
+        </div>
     </form>
 
 
